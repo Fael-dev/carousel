@@ -4,6 +4,7 @@ showSlides();
 function showSlides() {
   var time = 5000;
   var i;
+
   // Pegando as classe mySlides e dot dentro de variáveis
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -27,5 +28,5 @@ function showSlides() {
   // Faz o slide funcionar 
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, time); // Passando slides em 1 segundo
+  setTimeout(showSlides, time); // Passando slides em 5 segundos
 }

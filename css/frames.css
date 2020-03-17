@@ -1,7 +1,61 @@
-.main{
-    box-sizing: content-box;
-    width: 400px;
-    margin:0 auto;
+*{
+	font-family: Verdana, sans-serif;
+	overflow: hidden;
+}
+/* ========= CSS DO MENU ============ */
+ul.menu{
+	position: relative;
+	list-style: none;
+	background-color: #f5f5f5;
+	margin:10px auto;
+	width: 50%;
+	opacity:0.7;
+}
+ul.menu li{
+	display: inline-block;
+	text-align: center;
+	padding:15px;
+	cursor:pointer;
+	border-bottom: 1px solid black;
+}
+ul.menu li:hover{	
+	cursor: pointer;
+	text-align: center;
+	padding:15px;
+	background-color: #c2c2c2;
+	color:black;
+	border-bottom: 1px solid white;
+}
+/* ========= FIM DO MENU ============ */
+.card{
+	position: relative;
+    height: 340px;
+    width: 340px;
+    margin: 50px auto;
     text-align: center;
-    color: #ff5b4f;
-  }
+    background: linear-gradient(white, #0094bd);
+    opacity: 0.8;
+    padding:10px;
+    border-radius:50%;
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card:hover{
+	transform:translate(-5px, -5px);
+	box-shadow: 5px 5px 2px black;
+	cursor: pointer;
+}
+ul.lista{
+	list-style: none;
+	width: 100%;
+}
+ul.lista li{
+	display: inline-block;
+	margin:11px;
+}
+p{
+	margin-top:150px;
+}
+
+
