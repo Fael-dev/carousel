@@ -2,7 +2,7 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  var time = 5000;
+  var time = 20000;
   var i;
 
   // Pegando as classe mySlides e dot dentro de variáveis

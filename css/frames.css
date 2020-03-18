@@ -6,7 +6,7 @@
 ul.menu{
 	position: relative;
 	list-style: none;
-	background-color: #f5f5f5;
+	background-color: black;
 	margin:10px auto;
 	width: 50%;
 	opacity:0.7;
@@ -16,46 +16,78 @@ ul.menu li{
 	text-align: center;
 	padding:15px;
 	cursor:pointer;
+	color:white;
 	border-bottom: 1px solid black;
 }
 ul.menu li:hover{	
 	cursor: pointer;
 	text-align: center;
 	padding:15px;
-	background-color: #c2c2c2;
+	background-color: #f5f5f5;
 	color:black;
 	border-bottom: 1px solid white;
 }
 /* ========= FIM DO MENU ============ */
-.card{
+/* ======== CSS ARO DE NOTÍCIAS ===========*/
+.aro{
 	position: relative;
-    height: 340px;
-    width: 340px;
-    margin: 50px auto;
-    text-align: center;
-    background: linear-gradient(white, #0094bd);
+	width: 800px;
+    height: 600px;
+    margin: 10px auto;
     opacity: 0.8;
-    padding:10px;
-    border-radius:50%;
-    overflow: hidden;
+    border-radius:5%;
     transition: all 0.5s;
     cursor: pointer;
 }
-.card:hover{
+.aro:hover{
 	transform:translate(-5px, -5px);
 	box-shadow: 5px 5px 2px black;
 	cursor: pointer;
 }
+/* ======== FIM CSS ARO DE NOTICÍAS ======== */
 ul.lista{
 	list-style: none;
 	width: 100%;
 }
 ul.lista li{
+	position: relative;
 	display: inline-block;
 	margin:11px;
+    height: 340px;
+    width: 340px;
+    margin: 50px auto;
+    opacity: 0.8;
+    border-radius:50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+ul.lista li:hover{
+	transform:translate(-5px, -5px);
+	box-shadow: 5px 5px 2px black;
+	cursor: pointer;
 }
 p{
 	margin-top:150px;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px){
+	.aro{
+		width: 900px;
+		margin:10px auto;
+		height: 450px;
+	}
+	ul.lista li{
+		position: relative;
+		display: inline-block;
+		margin:15px;
+	    height: 300px;
+	    width: 300px;
+	    margin: 50px auto;
+	    opacity: 0.8;
+	    border-radius:50%;
+	    transition: all 0.5s;
+	    cursor: pointer;
+}	
 }
 
 
